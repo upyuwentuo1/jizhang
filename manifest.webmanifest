@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "简账 Lite - 每日收支记账",
+  "short_name": "简账 Lite",
+  "description": "离线记账、月度预算、消费分类统计与本地备份。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f4f7f5",
+  "theme_color": "#146b58",
+  "lang": "zh-CN",
+  "categories": ["finance", "productivity"],
+  "prefer_related_applications": false,
+  "icons": [
+    {"src": "./icons/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any"},
+    {"src": "./icons/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any"},
+    {"src": "./icons/maskable-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable"}
+  ]
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+  <meta name="theme-color" content="#146b58">
+  <meta name="description" content="简账 Lite：轻量、隐私优先的个人记账应用，支持离线记账、预算与统计。">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="简账 Lite">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>简账 Lite · 安卓适配版</title>
+</head>
+<body data-theme="forest" data-mode="light" data-font="system" data-shape="pill">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">¥</span><div><strong>简账 Lite</strong><small>把每一笔花销看清楚</small></div></div>
+      <div class="top-actions">
+        <button class="icon-btn" data-action="togglePrivacy" aria-label="显示或隐藏金额" id="privacyButton"></button>
+        <button class="icon-btn" data-action="share" aria-label="分享应用" id="shareButton"></button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1" aria-live="polite"></main>
+    <nav class="bottom-nav" aria-label="主导航">
+      <button class="tab-btn active" data-tab="home" aria-label="首页"><span class="nav-icon" data-icon="home"></span><span>首页</span></button>
+      <button class="tab-btn" data-tab="bills" aria-label="账单"><span class="nav-icon" data-icon="list"></span><span>账单</span></button>
+      <button class="record-slot" data-action="add" aria-label="记一笔"><span class="record-surface"></span><span class="record-text">记一笔</span></button>
+      <button class="tab-btn" data-tab="stats" aria-label="统计"><span class="nav-icon" data-icon="chart"></span><span>统计</span></button>
+      <button class="tab-btn" data-tab="mine" aria-label="我的"><span class="nav-icon" data-icon="user"></span><span>我的</span></button>
+    </nav>
+  </div>
+  <div id="overlay" class="overlay" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script defer src="./app.js"></script>
+</body>
+</html>
